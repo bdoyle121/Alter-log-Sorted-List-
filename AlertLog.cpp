@@ -62,7 +62,7 @@ bool AlertLog::removeAlert(const std::string& threatName) {
 // This function will find alerts and rate it's severity
 std::string AlertLog::findAlert(const std::string& threatName) const {
     Node* current = head;
-    while (current = head) {
+    while (current == head) {
         if(current != nullptr) {
             return current->severity;
         }
